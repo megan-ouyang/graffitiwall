@@ -1,0 +1,51 @@
+
+.drop-cap::first-letter {
+  font-size: 2.75em;
+  font-family: "Times New Roman", serif;
+  float: left;
+  line-height: 0.8;
+  margin-right: 0.1em;
+  color: #171167;
+}
+
+input::placeholder {
+    color: plum;
+    font-style: italic; font-size: 0.9em;
+}
+
+.button {
+    background-color: #7300ff;   
+    color: white;
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.spin {
+    display: block;
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid plum;     
+    margin: 50px auto; 
+    object-fit: cover;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+.spin:hover {
+    animation-play-state: paused;
+}
+
